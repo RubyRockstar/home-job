@@ -1,24 +1,18 @@
-puts 'A = '
-A = gets.chomp.to_f
-puts 'B = '
-B = gets.chomp.to_f
-puts 'C = '
-C = gets.chomp.to_f
+puts 'a = '
+a = gets.chomp.to_f
+puts 'b = '
+b = gets.chomp.to_f
+puts 'c = '
+c = gets.chomp.to_f
  
-D = B*B - 4*A*C
+d  = Math.sqrt b * b - 4 * a * c
  
-if (D == 0)
-   puts 'x = '+(-B/2/A).to_s
-else
-   if (D > 0)
-      puts 'x1 = '+((-B-Math.sqrt(D))/2/A).to_s
-      puts 'x2 = '+((-B+Math.sqrt(D))/2/A).to_s
-   else
-      puts 'x1 = ('+(-B/2/A).to_s+','+(Math.sqrt(-D)/2/A).to_s+')'
-      puts 'x2 = ('+(-B/2/A).to_s+','+(-Math.sqrt(-D)/2/A).to_s+')'
-   end
-if (D < 0)
+if (d == 0)
+   puts 'x = '+ (- b / 2 / a).to_s
+elsif (d > 0)
+      puts 'x1 = ' + (( - b - d) / 2 / a ).to_s
+      puts 'x2 = ' + ((- b + d) / 2 / a ).to_s
+   else (d < 0)
 	puts "корней нет"
-end
 end
 
