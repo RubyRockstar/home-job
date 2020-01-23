@@ -1,4 +1,4 @@
-puts 'a = '
+ puts 'a = '
 a = gets.chomp.to_f
 puts 'b = '
 b = gets.chomp.to_f
